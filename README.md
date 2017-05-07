@@ -7,9 +7,9 @@ To setup this script, you will need to clone the repo, and go into the directory
 
 After that, run the following commands:
 
-	*chmod u+x battery-notification.sh*
+	chmod u+x battery-notification.sh
 
-	*./battery-notification.sh --install*
+	./battery-notification.sh --install
 
 What these commands will do is set the shell script to executable by the user, and install the script.
 
@@ -19,11 +19,11 @@ Then, it will install a cron job to call it every 2 minutes.
 
 ## Output
 
-	* When your battery is between 11-15%, it will tell you to plug in your computer.
+* When your battery is between 11-15%, it will tell you to plug in your computer.
 
-	* When your battery is between 6-10%, it will alert you that it will shutdown at 5%.
+* When your battery is between 6-10%, it will alert you that it will shutdown at 5%.
 
-	* At 5% it will alert you that your computer is shutting down, and shut down your computer safely.
+* At 5% it will alert you that your computer is shutting down, and shut down your computer safely.
 
 ## Uninstall
 

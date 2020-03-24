@@ -10,8 +10,10 @@
 ##
 ## Dependencies: acpi, send-notify
 ## 
-## Tested on Ubuntu Desktop 16.04.2 LTS
+## Tested on Ubuntu Desktop 16.04.2 LTS and Ubuntu Desktop 18.04.4 LTS
 ##########
+
+eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
 
 # check if acpi and send-notify are installed.
 if [ `dpkg -l | grep acpi | grep -v acpi-support | grep -v acpid | grep -c acpi` -ne 1 ]; then

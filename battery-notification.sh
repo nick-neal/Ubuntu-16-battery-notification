@@ -16,7 +16,7 @@
 eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
 
 # check if acpi and send-notify are installed.
-if [ `dpkg -l | grep acpi | grep -v acpi-support | grep -v acpid | grep -c acpi` -ne 1 ]; then
+if [ `dpkg -l | grep acpi | grep -v acpi-support | grep -v acpid | grep -c acpi` -le 1 ]; then
 	echo "run 'sudo apt install acpi' then run '$0' again."
 	exit
 fi
